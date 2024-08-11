@@ -1,6 +1,6 @@
 const { app, BrowserWindow, dialog } = require('electron');
 const { autoUpdater } = require('electron-updater');
-
+autoUpdater.checkForUpdates();
 autoUpdater.on('update-available', () => {
     dialog.showMessageBox({
         type: 'info',
@@ -28,10 +28,10 @@ function createWindow() {
         width: 800,
         height: 600,
         webPreferences: {
-            nodeIntegration: true
+            nodeIntegration: true,
+            contextIsolation: false
         }
     });
-
     win.loadURL('https://lonewolf.fr');
 }
 
