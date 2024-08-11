@@ -10,10 +10,12 @@
   "author": "Morgann RIU",
   "license": "ISC",
   "description": "",
+  "dependencies": {
+    "electron-updater": "^5.3.0"
+  },
   "devDependencies": {
     "electron": "^25.2.0",
-    "electron-builder": "^24.13.3",
-    "electron-updater": "^5.3.0"
+    "electron-builder": "^24.13.3"
   },
   "build": {
     "appId": "com.portfolio.app",
