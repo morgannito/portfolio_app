@@ -32,7 +32,7 @@ function createWindow() {
             contextIsolation: false
         }
     });
-    win.loadURL('https://lonewolf.fr');
+    win.loadURL('https://morgannriu.lonewolf.fr');
 }
 
 app.whenReady().then(() => {
